@@ -26,6 +26,5 @@ urlpatterns = [
     # Aquí se añadirán las URLs de las otras aplicaciones
 ]
 
-# Configuración para servir archivos multimedia en desarrollo
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# Configuración para servir archivos multimedia
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
